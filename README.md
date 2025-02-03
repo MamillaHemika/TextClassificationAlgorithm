@@ -8,14 +8,17 @@ pip install pandas scikit-learn
 You need to organize your sentences and their corresponding labels. For simplicity, let’s assume you label them based on topics, such as Nature, Technology, Health, etc.
 
 import pandas as pd
+
 sentences = [
     # Your sentences here as listed above
 ]
+
 labels = [
     'Nature', 'Nature', 'Technology', 'Education', 'Animal', 'Art', 
     'Economy', 'Sports', 'History', 'Food', 'Travel', 'Health', 
     # Repeat labels corresponding to your sentences
 ]
+
 data = pd.DataFrame({'Sentence': sentences, 'Label': labels})
 
 
